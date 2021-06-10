@@ -1,0 +1,166 @@
+$secondary:     #858377;
+$warning:       #FFDF65;
+$dark:          #636057;
+$info:          #FF785E;
+$light:         #fff;
+$body-color:    #494846;
+$light-gray:    #E8E8DB;
+$danger:        #FF785E;
+$light-brown:   #F8F9FA;
+$light-lighter: #E5E5E5;
+.darklink{
+  color: #636057;
+}
+.warninglink > button{
+  border: 1px solid $secondary;
+  &:hover{
+    border: #FFDF65;
+  }
+}
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  14: $spacer * 3.5,
+  16: $spacer * 4,
+) !default;
+
+.bd-callout{
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: .25rem;
+  border-radius: .25rem;
+}
+
+.bd-h2-callout{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 1px solid #e9ecef;
+  border-left-width: .25rem;
+  border-radius: .25rem;
+}
+.bd-h5-callout{
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 1px solid #e9ecef;
+  border-left-width: .25rem;
+  border-right-width: .25rem;
+  border-radius: .25rem;
+}
+.bd-callout-warning {
+  border-left-color: #FFDF65;
+}
+.tab{
+  background: $light;
+  border: 2px solid #E8E8DB;
+  z-index: 999;
+}
+.nav{
+  .nav-link{
+    color: $dark;
+    font-weight: bold;
+    &:focus{
+      color: $dark;
+      font-weight: bold;
+      border-bottom: 2px solid #ffc107;
+    }
+    &:hover{
+      color: $dark;
+      font-weight: bold;
+    }
+  }
+}
+.wrap{
+  padding: 48px 0;
+}
+
+.border-modal-gray{
+  position: relative;
+  &::before{
+    content: '';
+    bottom: 10px;
+    width: 30%;
+    height: 2px;
+    background: $light-gray;
+    margin-left: -10px;
+    box-shadow: 350px 0 $light-gray;
+  }
+}
+.footer{
+  background: $body-color;
+}
+
+.col-12 > .btn-warning-hover{
+  color: $dark;
+  &:hover{
+    background: $danger;
+    color: $light;
+  }
+}
+.col-7 > .btn-outline-warning{
+  border: 2px solid $dark;
+  &:hover{
+    border: 2px solid $warning;
+    i{
+      color: $danger;
+    }
+  }
+}
+.col-5 > .btn-outline-warning{
+  border: 2px solid $dark;
+  &:hover{
+    border: 2px solid $warning;
+  }
+}
+
+.card-body > a{
+  position: relative;
+}
+.more-link{
+  text-decoration: none;
+  color: $danger;
+  font-weight: bold;
+  &:hover{
+    color: $danger;
+  }
+}
+
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='#{$dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='#{$dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+.card-icon{
+  width: 30px;
+  height: 30px;
+}
+.d-flex > .btn-outline-secondary{
+  &:hover{
+    background: $warning;
+    border: $warning;
+  }
+}
+
+.button > .btn-warning{
+  color: $secondary;
+  &:hover{
+    color: $light;
+    background: $danger;
+  }
+}
