@@ -38,7 +38,7 @@ function heightToTop(ele) {
 }
 function goToTab() {
   window.scrollTo({
-    top: heightToTop(document.getElementsByClassName("tab-js")[0]) - 70,
+    top: heightToTop(document.getElementsByClassName("tab-content")[0]) - 70,
     behavior: "smooth",
   });
 }
