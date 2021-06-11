@@ -455,7 +455,7 @@
               <h3 class="h3 fw-bold bg-white position-absolute translate-middle start-50 px-3">贊助專案</h3>
             </div>
           </div>
-          <form class="needs-validation novalidate">
+          <form class="needs-validation" id="form" novalidate>
             <div class="mb-3">
               <label for="project" class="form-label">贊助方案</label>
               <select class="form-select" id="project" aria-label="project" required>
@@ -584,6 +584,11 @@
         </ul>
       </div>
     </div>
+  </div>
+  <div class="position-sticky bottom-0 button" style="z-index: 999">
+    <button class="btn btn-warning btn-lg px-5 fw-bold rounded-0 mt-2 w-100 d-md-none" onclick="goForm()" id="bottomBtn" style="display: block;">
+      贊助專案
+    </button>
   </div>
   <div class="footer py-8 text-white text-center">
     <p>Copyright © 拼拼 All rights reserved.</p>
