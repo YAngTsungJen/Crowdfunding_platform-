@@ -23,3 +23,22 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     );
   });
 })();
+
+// 導覽與頁籤 (Navs and tabs)
+function heightToTop(ele) {
+  let bridge = ele;
+  let root = document.body;
+  let height = 0;
+  do {
+    height += bridge.offsetTop;
+    bridge = bridge.offsetParent;
+  } while (bridge !== root);
+
+  return height;
+}
+function goToTab() {
+  window.scrollTo({
+    top: heightToTop(document.getElementsByClassName("tab-js")[0]) - 70,
+    behavior: "smooth",
+  });
+}
