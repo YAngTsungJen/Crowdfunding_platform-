@@ -164,3 +164,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     background: $danger;
   }
 }
+
+.top-nav {
+  top: 82px;
+}
+.h-100vh-nav {
+  height: calc(100vh - 82px);
+}
