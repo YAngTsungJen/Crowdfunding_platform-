@@ -42,24 +42,3 @@ function goToTab() {
     behavior: "smooth",
   });
 }
-
-
-
-// mobile btn toggle
-var bottomBtn = document.getElementById("bottomBtn");
-bottomBtn.style.display = "none";
-window.onscroll = function () {
-  const t = document.documentElement.scrollTop || document.body.scrollTop;
-  if (bottomBtn !== null) {
-    if (
-      t >
-        heightToTop(document.getElementsByClassName("tab-content")[0]) -
-          100 &&
-      t < heightToTop(form) - 170
-    ) {
-      bottomBtn.style.display = "block";
-    } else {
-      bottomBtn.style.display = "none";
-    }
-  }
-};
